@@ -1,5 +1,3 @@
-// ignore_for_file: non_constant_identifier_names
-
 import 'package:bmi_calculator/widget/left_bar.dart';
 import 'package:bmi_calculator/widget/right_bar.dart';
 import 'package:flutter/material.dart';
@@ -59,46 +57,62 @@ class _HomePageState extends State<HomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SizedBox(
-                  width: 130,
-                  child: TextField(
-                    controller: _heightController,
-                    style: TextStyle(
-                      fontSize: 42,
-                      color: accentColor,
+                Column(
+                  children: [
+                    Text(
+                      "In Meter",
+                      style: TextStyle(color: accentColor),
                     ),
-                    textAlign: TextAlign.center,
-                    keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Height",
-                      hintStyle: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.w300,
-                        color: accentColor.withOpacity(.8),
+                    SizedBox(
+                      width: 130,
+                      child: TextField(
+                        controller: _heightController,
+                        style: TextStyle(
+                          fontSize: 42,
+                          color: accentColor,
+                        ),
+                        textAlign: TextAlign.center,
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Height",
+                          hintStyle: TextStyle(
+                            fontSize: 40,
+                            fontWeight: FontWeight.w300,
+                            color: accentColor.withOpacity(.8),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
                 SizedBox(
                   width: 130,
-                  child: TextField(
-                    controller: _weightController,
-                    style: TextStyle(
-                      fontSize: 40,
-                      color: accentColor,
-                    ),
-                    textAlign: TextAlign.center,
-                    keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Weight",
-                      hintStyle: TextStyle(
-                        fontSize: 42,
-                        fontWeight: FontWeight.w300,
-                        color: accentColor.withOpacity(.8),
+                  child: Column(
+                    children: [
+                      Text(
+                        "In Meter",
+                        style: TextStyle(color: accentColor),
                       ),
-                    ),
+                      TextField(
+                        controller: _weightController,
+                        style: TextStyle(
+                          fontSize: 40,
+                          color: accentColor,
+                        ),
+                        textAlign: TextAlign.center,
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Weight",
+                          hintStyle: TextStyle(
+                            fontSize: 42,
+                            fontWeight: FontWeight.w300,
+                            color: accentColor.withOpacity(.8),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -110,12 +124,22 @@ class _HomePageState extends State<HomePage> {
               onTap: (() {
                 _calculate_BMI();
               }),
-              child: Text(
-                "CALCULATE",
-                style: TextStyle(
-                  fontSize: 22,
-                  color: accentColor,
-                  fontWeight: FontWeight.bold,
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                decoration: BoxDecoration(
+                  border: Border.all(width: 2, color: Colors.white),
+                  borderRadius: BorderRadius.circular(20),
+                  color: HexColor("#e32636"),
+                ),
+                child: const Text(
+                  "CALCULATE",
+                  style: TextStyle(
+                    letterSpacing: 2,
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
@@ -173,6 +197,7 @@ class _HomePageState extends State<HomePage> {
             _text_Result = "";
             _heightController.text = "";
             _weightController.text = "";
+            FocusScope.of(context).requestFocus(FocusNode());
           });
         }),
         backgroundColor: HexColor("#e32636"),
