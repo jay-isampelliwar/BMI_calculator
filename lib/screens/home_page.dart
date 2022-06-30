@@ -126,7 +126,7 @@ class _HomePageState extends State<HomePage> {
               }),
               child: Container(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 decoration: BoxDecoration(
                   border: Border.all(width: 2, color: Colors.white),
                   borderRadius: BorderRadius.circular(20),
@@ -197,7 +197,9 @@ class _HomePageState extends State<HomePage> {
             _text_Result = "";
             _heightController.text = "";
             _weightController.text = "";
-            FocusScope.of(context).requestFocus(FocusNode());
+            FocusScope.of(context).requestFocus(
+              FocusNode(),
+            );
           });
         }),
         backgroundColor: HexColor("#e32636"),
