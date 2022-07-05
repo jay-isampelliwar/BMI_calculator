@@ -1,6 +1,6 @@
 ## bmi_calculator
 
-#The BMI Calculator App is a software application which avoids more manual hours that need to spend
+The BMI Calculator App is a software application which avoids more manual hours that need to spend
 in personally calculate and find the BMI for a particular person at a single click
 
 ![Screenshot_2022-07-05-18-17-33-37_298406805eaf49cc5b015a469601bc86](https://user-images.githubusercontent.com/65752549/177338872-bc6592ae-5eec-40de-9138-f18f9f70f8a3.jpg)
@@ -8,3 +8,7 @@ in personally calculate and find the BMI for a particular person at a single cli
 
 
 The above two screenshot shows the app UI and it's uses :)
+
+The red calculate button will calculate your BMI using your provided height and weight.
+The below red button will reset everything.
+
