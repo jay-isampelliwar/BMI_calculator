@@ -1,16 +1,10 @@
-# bmi_calculator
+## bmi_calculator
 
-A new Flutter project.
+#The BMI Calculator App is a software application which avoids more manual hours that need to spend
+in personally calculate and find the BMI for a particular person at a single click
 
-## Getting Started
+![Screenshot_2022-07-05-18-17-33-37_298406805eaf49cc5b015a469601bc86](https://user-images.githubusercontent.com/65752549/177338872-bc6592ae-5eec-40de-9138-f18f9f70f8a3.jpg)
+![Screenshot_2022-07-05-18-17-50-98_298406805eaf49cc5b015a469601bc86](https://user-images.githubusercontent.com/65752549/177338890-58c46cd2-6b80-48f6-ba1b-d7f2fba9929b.jpg)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The above two screenshot shows the app UI and it's uses :)
